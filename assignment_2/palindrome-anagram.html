@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script src="javascript.js"></script>
+        <style>
+            body{
+                background-color: black;
+            }
+           
+           
+   .styl{
+     margin-left:320px;
+       border-radius:3px;
+      margin-top:280px;
+      border:2px solid grey;
+      height:40px;
+      width:222px;
+   }
+  .btn{
+    margin-left:790px;
+       height:45px;
+       width:130px;
+       background:transparent;
+       font-weight:bold;
+       background-color: green;
+       color:white;
+       margin-top:-30px;
+       outline:none;
+       border:green;
+       border-radius:6px; 
+  }
+
+   button{
+       margin-left:350px;
+       height:45px;
+       width:90px;
+       background:transparent;
+       font-weight:bold;
+       background-color: green;
+       color:white;
+       outline:none;
+       border:green;
+       border-radius:6px;
+   }
+   .anag{
+    margin-left:750px;
+       border-radius:3px;
+      margin-top:-80px;
+      border:2px solid grey;
+      height:40px;
+      width:220px;
+   }
+   .anag1{
+    margin-left:750px;
+       border-radius:3px;
+      margin-top:-130px;
+      border:2px solid grey;
+      height:40px;
+      width:220px; 
+   }
+        </style>
+    </head>
+    <body>
+       
+    <form name="palin">
+       
+       <input  class="styl" type="text" id="input1" placeholder="enter string">
+    </form>
+
+    <button type="button" onclick="check(document.palin.input1.value);">Check for palindrome</button><br>
+
+    
+    <form name="anag">
+        <input type="text" class="anag" id="anagram1" placeholder="enter text"><br>
+      <input type="text" class="anag1" id="anagram2" placeholder="enter text">
+    </form>
+<button type="button" class="btn" onclick=checkanag(document.anag.anagram1.value,document.anag.anagram2.value)>check for anagram</button>
+</body>
+</html>

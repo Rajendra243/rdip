@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script src="javascript.js"></script>
+        <style>
+     .btn{
+         border:1px solid grey;
+         width:38px;
+         height:19px
+          padding:2px;
+          outline:none;
+          cursor:pointer;
+         text-align:center;
+     }
+     .btn:hover{
+         background-color:lightgray;
+         transition:0.5s;
+     }
+     .align{
+         margin-top:12px;
+     }
+     #result{
+         border-width:1.8px;
+         border-color:grey;
+         height:30px;
+     }
+     form{
+      margin-left:490px;
+      margin-top:200px;
+     }
+        </style>
+    
+    </head>
+    <body>
+        
+        <form name="calci">
+            <input type="text"  id="result" name="output">
+            <br>
+            <div class="align">
+            <input type=" button" class="btn" value="1" onclick="calci.output.value += '1'" readonly="readonly">
+            <input type=" button" value="2" class="btn" onclick="calci.output.value += '2' " readonly="readonly">
+            <input type=" button" value="3" class="btn" onclick="calci.output.value += '3' " readonly="readonly">
+            <input type=" button" value="+" class="btn" onclick="document.getElementById('result').value=addition() " readonly="readonly"/>
+            <br>
+            <input type=" button" class="btn" value="4" onclick="calci.output.value += '4' " readonly="readonly">
+            <input type=" button" value="5" class="btn" onclick="calci.output.value += '5' " readonly="readonly">
+            <input type=" button" value="6" class="btn" onclick="calci.output.value += '6' " readonly="readonly">
+            <input type=" button" value="-" class="btn" onclick="document.getElementById('result').value=subtraction() " readonly="readonly">
+            <br>
+            <input type=" button" class="btn" value="7" onclick="calci.output.value += '7' " readonly="readonly">
+            <input type=" button" value="8" class="btn" onclick="calci.output.value += '8' " readonly="readonly">
+            <input type=" button" value="9" class="btn" onclick="calci.output.value += '9' " readonly="readonly">
+            <input type=" button" value="x" class="btn" onclick="document.getElementById('result').value=multiplication() " readonly="readonly">
+            <br>
+            <input type=" button" class="btn" value="0" onclick="calci.output.value += '0' " readonly="readonly">
+            <input type=" button" class="btn" value="." onclick="document.getElementById('result').value=decimal() " readonly="readonly">
+            <input type=" button" class="btn" value="/" onclick="document.getElementById('result').value=divi() " readonly="readonly">
+            <input type=" button" class="btn" value="%" onclick=" document.getElementById('result').value=perce()" readonly="readonly">
+            <br>
+            <input type=" button" class="btn" value="abs" onclick="document.getElementById('result').value=absolute() " readonly="readonly">
+            <input type=" button" class="btn" value="sq rt" onclick="document.getElementById('result').value=sqroot() " readonly="readonly">
+            <input type=" button" class="btn" value="=" onclick="document.getElementById('result').value=eq()" readonly="readonly">
+            <input type="reset" class="btn" value="clear">
+            <br>
+            
+        </div>
+        </form>
+   
+    </body>
+</html>
